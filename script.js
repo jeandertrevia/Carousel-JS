@@ -22,7 +22,7 @@ function nextSlider() {
 
 function prevSlider() {
     hideSlider()
-    if(currentSlide >it  0) {
+    if(currentSlide > 0) {
         currentSlide--} 
    
     showSlider()
@@ -33,4 +33,3 @@ function prevSlider() {
 
     console.log(slider)
         
-   
