@@ -13,16 +13,16 @@ function showSlider() {
 }
 
 function nextSlider() {
-    hideSlider()
-    if(currentSlide !== slider.length -1) {
+    if(currentSlide < slider.length -1) {
         currentSlide++
+    hideSlider()
     showSlider()
 }
 }
 
 function prevSlider() {
     hideSlider()
-    if(currentSlide !== 0) {
+    if(currentSlide > 0) {
         currentSlide--} 
    
     showSlider()
