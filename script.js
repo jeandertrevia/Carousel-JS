@@ -13,29 +13,22 @@ function showSlider() {
 }
 
 function nextSlider() {
-    hideSlider()
-    if(currentSlide === slider.length -1) {
-        currentSlide = 0
-    } else {
+    if(currentSlide < slider.length -1) {
         currentSlide++
+        hideSlider()
+        showSlider()
     }
-    showSlider()
 }
 
 function prevSlider() {
     hideSlider()
-    if(currentSlide === 0) {
-        currentSlide = slider.length -1} 
-    else{
+    if (currentSlide > 0) {
         currentSlide--
     }
     showSlider()
-    }
+}
 
     btnNext.addEventListener('click', nextSlider)
     btnPrev.addEventListener('click', prevSlider)
 
-    console.log(slider)
-
-    currentSlide = currentSlide + 1
-    currentSlide = currentSlide -1
+    
